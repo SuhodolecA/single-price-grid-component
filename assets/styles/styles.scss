@@ -1,0 +1,28 @@
+// === add fonts ===
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+// === / add fonts ===
+
+// === variables ===
+$cyan-color: hsl(179, 62%, 43%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(204, 43%, 93%);
+$grayis-blue: hsl(218, 22%, 67%);
+// === / variables ===
+
+// === common styles ===
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+}
+// === / common styles ===
