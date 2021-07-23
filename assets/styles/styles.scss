@@ -24,5 +24,127 @@ $grayis-blue: hsl(218, 22%, 67%);
 body {
     font-family: 'Karla', sans-serif;
     font-size: 1em;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $light-gray;
+    padding: 0 1em;
 }
 // === / common styles ===
+
+.component {
+    max-width: 40em;
+    border-radius: .6em;
+    overflow: hidden;
+    
+
+    &-header {
+        background: hsl(0, 0%, 100%);
+        padding: 2.8em 2.5em;
+
+        &__title {
+            color: $cyan-color;
+            font-size: 2em;
+            margin-bottom: .65em;
+
+            @media (max-width: 32em) {
+                font-size: 1.5em;
+            }
+        }
+
+        &__subtitle {
+            color: $bright-yellow;
+            margin-bottom: 0.6em;
+
+            @media (max-width: 32em) {
+                font-size: .9em;
+            }
+        }
+        &__text {
+            color: $grayis-blue;
+
+            @media (max-width: 32em) {
+                font-size: .82em;
+                line-height: 1.6em;
+            }
+        }
+    }
+
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (max-width: 32em) {
+            display: block;
+        }
+        &__subscribe {
+            background: $cyan-color;
+            padding: 2.5em;
+            color: hsl(0, 0%, 100%);
+            
+            &-title {
+                font-size: 1.1em;
+                margin-bottom: 1em;
+            }
+
+            &-price {
+                color: hsla(0, 0%, 100%, .5);
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.6em;
+
+                &-digit {
+                    color: hsl(0, 0%, 100%);
+                    font-size: 2em;
+                    font-weight: 700;
+                    margin-right: 0.3em;
+                }
+            }
+
+            &-text {
+                margin-bottom: 1.6em;
+            }
+
+            &-btn {
+                font-family: 'Karla', sans-serif;
+                font-size: 1em;
+                font-weight: 700;
+                color: hsl(0, 0%, 100%);
+                background: $bright-yellow;
+                text-align: center;
+                max-width: 15em;
+                width: 100%;
+                padding: 0.9em 0;
+                border: 0;
+                border-radius: .3em;
+                cursor: pointer;
+                transition: background .3s ease-in;
+
+                &:hover {
+                    background: hsla(90, 70%, 54%, .8);
+                }
+            }
+        }
+
+        &__why-us {
+            background: hsla(179, 62%, 43%, .6);
+            padding: 2.5em;
+
+            &-title {
+                color: hsl(0, 0%, 100%);
+                font-size: 1.1em;
+                margin-bottom: 1em;
+            }
+
+            &-text {
+                color: hsla(0, 0%, 100%, .7);
+                font-size: 0.8em;
+                max-width: 14.2em;
+                line-height: 1.6em;
+            }
+        }
+    }
+
+}

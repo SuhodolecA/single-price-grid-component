@@ -16,5 +16,151 @@
 body {
   font-family: 'Karla', sans-serif;
   font-size: 1em;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #e5eff5;
+  padding: 0 1em;
+}
+
+.component {
+  max-width: 40em;
+  border-radius: .6em;
+  overflow: hidden;
+}
+
+.component-header {
+  background: white;
+  padding: 2.8em 2.5em;
+}
+
+.component-header__title {
+  color: #2ab2af;
+  font-size: 2em;
+  margin-bottom: .65em;
+}
+
+@media (max-width: 32em) {
+  .component-header__title {
+    font-size: 1.5em;
+  }
+}
+
+.component-header__subtitle {
+  color: #c0df34;
+  margin-bottom: 0.6em;
+}
+
+@media (max-width: 32em) {
+  .component-header__subtitle {
+    font-size: .9em;
+  }
+}
+
+.component-header__text {
+  color: #98a6bd;
+}
+
+@media (max-width: 32em) {
+  .component-header__text {
+    font-size: .82em;
+    line-height: 1.6em;
+  }
+}
+
+.component-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 32em) {
+  .component-main {
+    display: block;
+  }
+}
+
+.component-main__subscribe {
+  background: #2ab2af;
+  padding: 2.5em;
+  color: white;
+}
+
+.component-main__subscribe-title {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.component-main__subscribe-price {
+  color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.6em;
+}
+
+.component-main__subscribe-price-digit {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  margin-right: 0.3em;
+}
+
+.component-main__subscribe-text {
+  margin-bottom: 1.6em;
+}
+
+.component-main__subscribe-btn {
+  font-family: 'Karla', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  background: #c0df34;
+  text-align: center;
+  max-width: 15em;
+  width: 100%;
+  padding: 0.9em 0;
+  border: 0;
+  border-radius: .3em;
+  cursor: pointer;
+  -webkit-transition: background .3s ease-in;
+  transition: background .3s ease-in;
+}
+
+.component-main__subscribe-btn:hover {
+  background: rgba(138, 220, 56, 0.8);
+}
+
+.component-main__why-us {
+  background: rgba(42, 178, 175, 0.6);
+  padding: 2.5em;
+}
+
+.component-main__why-us-title {
+  color: white;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.component-main__why-us-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8em;
+  max-width: 14.2em;
+  line-height: 1.6em;
 }
 /*# sourceMappingURL=styles.css.map */
